@@ -1,0 +1,81 @@
+body {
+  background-color: #014242;
+  color: #fff;
+}
+
+.main-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.main-section h4 {
+  color: rgba(255, 255, 255, 0.498);
+  font-weight: lighter;
+}
+
+.main-section h1 {
+  text-transform: capitalize;
+  font-size: 5vw;
+}
+
+.main-section .data-wrap .account-img {
+  width: 20%;
+  height: auto;
+  display: inline;
+  vertical-align: middle;
+}
+
+.main-section .data-wrap .account-img img {
+  width: 7%;
+  padding-top: 4%;
+}
+
+.main-section .data-wrap .information-container {
+  width: 52%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2% 0;
+}
+
+.main-section .data-wrap .information-container .data-container {
+  margin: 4%;
+}
+
+.main-section .data-wrap .information-container .data-container p {
+  font-size: 1.2vw;
+}
+
+.main-section .data-wrap .information-container .data-container .type-of-data {
+  color: rgba(255, 255, 255, 0.498);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 6vw !important;
+  }
+  .information-container {
+    width: 80% !important;
+  }
+  .information-container .data-container {
+    margin-left: 11vw !important;
+  }
+  .information-container .data-container p {
+    font-size: 2vw !important;
+    -webkit-margin-before: .3em;
+            margin-block-start: .3em;
+    -webkit-margin-after: .3em;
+            margin-block-end: .3em;
+  }
+  .account-img {
+    width: 25%;
+    vertical-align: text-top !important;
+  }
+  .account-img img {
+    width: 15% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

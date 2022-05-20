@@ -1,0 +1,110 @@
+.main-wrap {
+    width: 94%;
+    margin: 0 auto;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+
+    .text-wrap {
+        width: 80%;
+        text-align: justify;
+
+        .text-container-header {
+            width: 95% !important;
+            margin-right: 3%;
+        }
+
+        .text-container-main {
+            width: 95%;
+            margin-right: 3%;
+            text-align: justify;
+        }
+    }
+
+    .img-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+
+        figure {
+            margin-block-start: 0em;
+            margin-block-end: 1vw;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+        }
+
+        figcaption {
+            background-color: #37516b;
+            color: #fff;
+            border-radius: 0 0 12px 12px;
+            text-align: right;
+            padding: 1vw;
+            font-size: 1.2vw;
+            margin-block-start: -.4vw;
+        }
+
+        .cat1,
+        .cat2 {
+            img {
+                border-radius: 12px 12px 0 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:800px) {
+
+    .img-wrap {
+        width: 97% !important;
+        display: inline-flex;
+
+        figure {
+            width: 47%;
+            margin-inline-end: 2vw !important;
+        }
+    }
+
+    .main-wrap {
+        .img-wrap {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .text-wrap {
+        width: 100% !important;
+
+        .text-container-header {
+            width: 100% !important;
+        }
+
+        .text-container-main {
+            width: 100% !important;
+            text-align: justify;
+        }
+    }
+    .main-text {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .img-wrap {
+        width: 97% !important;
+        figure {
+            width: 100%;
+            margin-inline-end: 2vw !important;
+        }
+    }
+}
+
+@media (min-width:800px) {
+    .text-container-main {
+        display: none;
+    }
+}

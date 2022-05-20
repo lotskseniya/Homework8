@@ -1,0 +1,302 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main_page {
+  width: 99%;
+  padding: 0;
+  background: #fdf9f9;
+}
+
+.main_page header {
+  height: 6vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid;
+  padding-bottom: 1vh;
+}
+
+.main_page header .service-name {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+.main_page header .service-name .text-service-name {
+  margin-left: 10px;
+  font-size: 1.5vw;
+}
+
+.main_page header .service-name .mail {
+  width: 3vw;
+  height: 3vw;
+  margin-left: 3vw;
+  background-position: center;
+  background-image: url("../images/mail.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main_page header .account-wrap {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.main_page header .account-wrap .account-name {
+  margin-right: 10px;
+  font-size: 1.5vw;
+}
+
+.main_page header .account-wrap .account-img {
+  width: 3vw;
+  height: 3vw;
+  margin-right: 3vw;
+  background-position: center;
+  background-image: url("../images/account.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main_page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.main_page main .container {
+  width: 100%;
+}
+
+.main_page main .container .sidebar {
+  width: 14vw;
+  position: fixed;
+}
+
+.main_page main .container .sidebar ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.main_page main .container .sidebar a {
+  text-decoration: none;
+  color: #010101;
+}
+
+.main_page main .container .sidebar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3vw;
+  margin-left: 2vw;
+  list-style-type: none;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.main_page main .container .sidebar li .img {
+  width: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2.5vw 2.5vw;
+}
+
+.main_page main .container .sidebar li .text {
+  font-size: 1.3vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main_page main .container .sidebar li #incoming {
+  background-image: url("../images/incom.png");
+}
+
+.main_page main .container .sidebar li #outcoming {
+  background-image: url("../images/outcom.png");
+}
+
+.main_page main .container .sidebar li #drafts {
+  background-image: url("../images/draft.png");
+}
+
+.main_page main .container .sidebar li #spam {
+  background-image: url("../images/spam.png");
+}
+
+.main_page main .container .sidebar li:hover {
+  background-color: #f3ccdb;
+  cursor: pointer;
+}
+
+.main_page main .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1vw;
+}
+
+.main_page main .container .column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 1vw;
+}
+
+.main_page main .container .date {
+  font-size: 1.3vw;
+  margin-right: 2vw;
+  padding-right: 0;
+}
+
+.main_page main .container .important-letter .letter-preview {
+  display: none;
+}
+
+.main_page main .container table {
+  width: 85%;
+  margin-left: 14vw;
+  margin-right: -2vw;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main_page main .container table td {
+  border-bottom: 1px solid;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+.main_page main .container table td .letter-preview {
+  color: #968887;
+  margin-left: 10px;
+  width: 25.5vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main_page main .container table td .star-image {
+  width: 2vw;
+  height: 2vw;
+  background-image: url("../images/star1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main_page main .container table td .letter-field {
+  white-space: nowrap;
+  width: 58vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.main_page main .container table td .letter-field .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15vw;
+}
+
+.main_page main .container table .star-image-red {
+  width: 2vw;
+  height: 2vw;
+  background-image: url("../images/star2.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main_page main .container table .image-clip {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-image: url("../images/attach_26.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+@media screen and (max-width: 800px) {
+  .main_page .letter-field {
+    width: 12vw !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    font-size: 1.6vw !important;
+  }
+  .main_page .letter-field .letter-preview span {
+    display: none;
+  }
+  .main_page .letter-field .letter-preview {
+    margin-left: 0 !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+  .main_page td {
+    padding-top: 1vw !important;
+    padding-bottom: 1vw !important;
+  }
+  .main_page .image-clip {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .main_page .date {
+    margin-right: -3vw !important;
+    margin-left: 1.5vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .main_page .sidebar {
+    width: 9vw;
+  }
+  .main_page .sidebar li {
+    height: 5vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main_page .sidebar .text {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
